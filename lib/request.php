@@ -111,6 +111,8 @@ class Writing_On_GitHub_Request {
         if ( function_exists( 'getallheaders' ) ) {
 
             $this->headers = getallheaders();
+            echo "getallheaders\n";
+            var_dump($this->headers);
             return $this->headers;
         }
         /**
@@ -123,7 +125,8 @@ class Writing_On_GitHub_Request {
                 $this->headers[ str_replace( ' ', '-', ucwords( strtolower( str_replace( '_', ' ', substr( $name, 5 ) ) ) ) ) ] = $value;
             }
         }
-
+        echo "customheaders\n";
+        var_dump($this->headers);
         return $this->headers;
     }
 
