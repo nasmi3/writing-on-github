@@ -22,7 +22,7 @@ class Writing_On_GitHub_Database {
      * @var array
      */
     // Add divi specific posts and images
-    protected $whitelisted_post_types = array( 'post', 'page', 'et_pb_layout', 'attachment' );
+    protected $whitelisted_post_types = array( 'post', 'page', 'et_pb_layout', 'attachment', 'project' );
 
     /**
      * Currently whitelisted post statuses.
