@@ -208,6 +208,12 @@ class Writing_On_GitHub_Post {
             case 'page':
                 $name = 'pages';
                 break;
+            case 'et_pb_layout':
+                $name = 'layouts';
+                break;
+            case 'attachment':
+                $name = 'attachments';
+                break;
             default:
                 $obj = get_post_type_object( $this->type() );
 
