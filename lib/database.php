@@ -21,14 +21,16 @@ class Writing_On_GitHub_Database {
      *
      * @var array
      */
-    protected $whitelisted_post_types = array( 'post', 'page' );
+    // Add divi specific posts and images
+    protected $whitelisted_post_types = array( 'post', 'page', 'et_pb_layout', 'attachment' );
 
     /**
      * Currently whitelisted post statuses.
      *
      * @var array
      */
-    protected $whitelisted_post_statuses = array( 'publish' );
+    // Save drafts as well
+    protected $whitelisted_post_statuses = array( 'publish', 'draft' );
 
     /**
      * Instantiates a new Database object.
