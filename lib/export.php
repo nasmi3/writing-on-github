@@ -56,7 +56,7 @@ class Writing_On_GitHub_Export {
             return $error;
         }
 
-        return __( 'Export to GitHub completed successfully.', 'writing-on-github' );
+        return __( 'Sauvegarde sur GitHub réussie.', 'writing-on-github' );
     }
 
 
@@ -106,7 +106,7 @@ class Writing_On_GitHub_Export {
             return $result;
         }
 
-        return __( 'Export to GitHub completed successfully.', 'writing-on-github' );
+        return __( 'Sauvegarde sur GitHub réussie.', 'writing-on-github' );
     }
 
     /**
@@ -157,7 +157,7 @@ class Writing_On_GitHub_Export {
             $message = apply_filters(
                 'wogh_commit_msg_move_post',
                 sprintf(
-                    'Move %s to %s via WordPress at %s (%s)',
+                    'Déplacement de %s vers %s sur le site %s (%s)',
                     $old_github_path, $github_path,
                     site_url(),
                     get_bloginfo( 'name' )
@@ -178,7 +178,7 @@ class Writing_On_GitHub_Export {
             $message = apply_filters(
                 'wogh_commit_msg_new_post',
                 sprintf(
-                    'Create new post %s from WordPress at %s (%s)',
+                    'Nouvel article (%s) depuis le site %s (%s)',
                     $github_path,
                     site_url(),
                     get_bloginfo( 'name' )
@@ -198,7 +198,7 @@ class Writing_On_GitHub_Export {
             $message = apply_filters(
                 'wogh_commit_msg_update_post',
                 sprintf(
-                    'Update post %s from WordPress at %s (%s)',
+                    'Article %s mis à jour depuis le site %s (%s)',
                     $github_path,
                     site_url(),
                     get_bloginfo( 'name' )
@@ -237,7 +237,7 @@ class Writing_On_GitHub_Export {
         $message = apply_filters(
             'wogh_commit_msg_delete',
             sprintf(
-                'Deleting %s via WordPress at %s (%s)',
+                'Supression de %s par le site %s (%s)',
                 $github_path,
                 site_url(),
                 get_bloginfo( 'name' )
@@ -252,7 +252,7 @@ class Writing_On_GitHub_Export {
             return $result;
         }
 
-        return __( 'Export to GitHub completed successfully.', 'writing-on-github' );
+        return __( 'Sauvegarde sur GitHub réussie.', 'writing-on-github' );
     }
 
 
