@@ -30,7 +30,7 @@ class Writing_On_GitHub_Database {
      * @var array
      */
     // Save drafts as well
-    protected $whitelisted_post_statuses = array( 'publish', 'draft' );
+    protected $whitelisted_post_statuses = array( 'publish', 'future', 'pending', 'private' );
 
     /**
      * Instantiates a new Database object.
