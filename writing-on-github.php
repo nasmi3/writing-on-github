@@ -146,7 +146,9 @@ class Writing_On_GitHub {
         if ( ! wp_is_post_revision( $postID ) ) {
             $post = new Writing_On_GitHub_Post( $postID, Writing_On_GitHub::$instance->api() );
             if ( $post->is_on_github() ) {
-                return $post->github_edit_url();
+                // Edit link = edit with wordpress not with github
+                // + avoid redirect to github on post update !
+                // return $post->github_edit_url();
             }
         }
 
