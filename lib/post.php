@@ -214,6 +214,9 @@ class Writing_On_GitHub_Post {
             case 'attachment':
                 $name = 'attachments';
                 break;
+            case 'project':
+                $name = 'portfolio';
+                break;
             default:
                 $obj = get_post_type_object( $this->type() );
 
